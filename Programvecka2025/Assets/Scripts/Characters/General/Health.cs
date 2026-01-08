@@ -1,33 +1,28 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Health 
+public class Health : MonoBehaviour
 {
-    int maxHealth;
+    [SerializeField]int maxHealth;
     int currentHealth;
     int armorAmount = 0;
-    public Health(int maxHealth)
-    {
-        this.maxHealth = maxHealth;
-        this.currentHealth = maxHealth;
-    }
-
+   
     public void ChangeHealth(int amount)
     {
         if (amount < 0)
         {
-            amount = removeArmor(amount);
+            amount = RemoveArmor(amount);
         }
 
         currentHealth += amount;
     }
 
-    public void addArmor(int amount)
+    public void AddArmor(int amount)
     {
         armorAmount += amount;
     }
 
-    public int removeArmor(int amount)
+    public int RemoveArmor(int amount)
     {
         while (amount < 0 && armorAmount > 0)
         {
