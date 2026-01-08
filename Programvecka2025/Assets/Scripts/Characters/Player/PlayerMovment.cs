@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
 {
-    [SerializeField]int speed;
-    
+    [SerializeField]int walkspeed;
+    [SerializeField]int runspeed;
+    int speed;
     Rigidbody2D rigidbody;
 
 
@@ -43,6 +44,15 @@ public class PlayerMovment : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             Move(transform.right);
+        }
+        // Adjust speed based on whether the Left Shift key is held down
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = runspeed;
+        }
+        else
+        {
+            speed = walkspeed;
         }
     }
 
