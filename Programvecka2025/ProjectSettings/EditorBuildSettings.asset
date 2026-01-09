@@ -11,6 +11,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TestScenes/JenzTest.unity
     guid: 0ea2fa4a6748efd40b64cf5e47a30878
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/PassivScenes/GameOver.unity
+    guid: cded3f4cb27e1ae419321a645648e071
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/PassivScenes/MainMenu.unity
+    guid: cc191da640b24174ca1a6f35ab65b601
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/PassivScenes/Win.unity
+    guid: 20fd724016108b44bbd49339e000293f
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/PlayingScenes/Level1.unity
+    guid: c722f374681fd8042be9f12c749dc0e9
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 228e62356fdfede4190b3a8fbf619f97, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
