@@ -3,14 +3,13 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    int maxHealth = 100;
-    int currentHealth;
+    int currentHealth = 100;
     int armorAmount = 0;
 
     private void Start()
     {
-        // Initialize current health to max health at the start
-       // currentHealth = gameObject.Basestats;
+        
+       
     }
 
 
@@ -56,9 +55,5 @@ public class Health : MonoBehaviour
         return currentHealth;
     }
 
-    // Getter for max health
-    public int GetMaxHealth()
-    {
-        return maxHealth;
-    }
+    
 }

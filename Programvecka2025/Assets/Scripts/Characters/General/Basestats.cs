@@ -55,4 +55,9 @@ public class Basestats: MonoBehaviour
         attackSpeed = attackSpeed * (int)levelBuffMultipier;
 
     }
+
+    public int GetMaxHealth()
+    {
+        return maxHealth;
+    }
 }
