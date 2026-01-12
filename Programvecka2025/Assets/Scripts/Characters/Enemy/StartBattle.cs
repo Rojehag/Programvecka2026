@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class InteractionSystem : MonoBehaviour
+public class StartBattle : MonoBehaviour
 {
     bool isPlayerInRange = false;
 
