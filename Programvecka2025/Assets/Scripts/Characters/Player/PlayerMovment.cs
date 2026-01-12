@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
 {
+    // Movement speed variables
     [SerializeField]int walkspeed;
     [SerializeField]int runspeed;
     int speed;
+    
+    // Reference to the Rigidbody2D component
     Rigidbody2D rigidbody;
 
 
