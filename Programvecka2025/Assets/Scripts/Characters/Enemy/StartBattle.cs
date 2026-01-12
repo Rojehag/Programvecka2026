@@ -26,5 +26,6 @@ public class StartBattle : MonoBehaviour
     void StartFight()
     {
         print("Let's start fighting!!!");
+        //Switch to fighting scene!
     }
 }
