@@ -5,10 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Fix for CS0120 and CS1061:
-// - CS0120: You must use an instance of PlayerInteracter, not the type name.
-// - CS1061: ScriptableObject does not have a transform. You need a reference to a GameObject or its Transform.
-// Assuming you have a reference to the PlayerInteracter instance and its GameObject.
+
 
 [CreateAssetMenu(fileName = "InteractionManager", menuName = "Scriptable Objects/InteractionManager")]
 public class InteractionManager : ScriptableObject
@@ -17,10 +14,10 @@ public class InteractionManager : ScriptableObject
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        // Example: Ensure playerInteracter is assigned before using
+        // kollar om spelarens interacter och dess gameobject inte är null  
         if (playerInteracter == null || playerInteracter.characterGameObject == null)
             return;
-
+        // Kollar om spelaren har hälsa kvar och om den kolliderar med en fiende
         bool isAttacked = false;
         if (playerInteracter.health > 0)
         {
@@ -35,16 +32,16 @@ public class InteractionManager : ScriptableObject
             }
         }
     }
-
+    // Sätter upp data för striden mellan spelaren och fienden
     private void setBattleData(Collider2D other)
     {
-        // Use the player's GameObject transform to get position
+        // Sätter spelarens position
         playerInteracter.position[0] = playerInteracter.characterGameObject.transform.position.x;
         playerInteracter.position[1] = playerInteracter.characterGameObject.transform.position.y;
 
         // Enemy data setup
         EnemyStatus enemyComponent = other.gameObject.GetComponent<EnemyStatus>();
-        if (enemyComponent != null)
+        if (enemyComponent != null) 
         {
             EnemyStatus enemyStatus = enemyComponent;
             if (enemyStatus != null)
