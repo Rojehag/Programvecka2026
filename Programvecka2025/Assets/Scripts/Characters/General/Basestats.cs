@@ -10,7 +10,7 @@ public class Basestats: MonoBehaviour
     // Secondary Stats
     [SerializeField] int criticalChance = 10;
     [SerializeField] int dodegeChance = 20;
-    [SerializeField] int experiancePoints;
+    public int experiancePoints;
 
     // Level Buff Multiplier
     [SerializeField] float levelBuffMultipier;

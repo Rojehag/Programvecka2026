@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
     private void Start()
     {
         
-       
+       currentHealth = gameObject.GetComponent<Basestats>().GetMaxHealth();
     }
 
 

@@ -3,13 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : Health 
 {
+    private void Start()
+    {
+        
+    }
     private void Update()
     {
-        //For testing purposes only
-        if(Input.GetKeyDown(KeyCode.K))
-        {
-            ChangeHealth(-10);
-        }
+        
 
         // Check if health is zero or below
         if (GetCurrentHealth() <= 0)
