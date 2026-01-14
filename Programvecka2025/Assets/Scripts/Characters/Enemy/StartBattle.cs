@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartBattle : MonoBehaviour
 {
@@ -26,6 +27,6 @@ public class StartBattle : MonoBehaviour
     void StartFight()
     {
         print("Let's start fighting!!!");
-        //Switch to fighting scene!
+        SceneManager.LoadScene(3);
     }
 }

@@ -3,10 +3,10 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public Slider healthSlider;
+    public Image fillImage;
 
     public void SetHealth(int Health) 
     { 
-        healthSlider.value = Health;
+        fillImage.fillAmount = Health / 100f;
     }
 }
