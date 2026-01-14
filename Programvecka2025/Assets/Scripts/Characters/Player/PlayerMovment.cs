@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
@@ -6,7 +8,9 @@ public class PlayerMovment : MonoBehaviour
     [SerializeField]int walkspeed;
     [SerializeField]int runspeed;
     int speed;
-    
+
+    [SerializeField] List<Sprite> playerSprites = new List<Sprite>();
+
     // Reference to the Rigidbody2D component
     Rigidbody2D rigidbody;
 
@@ -35,18 +39,22 @@ public class PlayerMovment : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             Move(transform.up);
+            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[0];
         }
         if(Input.GetKey(KeyCode.S))
         {
             Move(-transform.up);
+            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[1];
         }
         if (Input.GetKey(KeyCode.A))
         {
             Move(-transform.right);
+            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[2];
         }
         if (Input.GetKey(KeyCode.D))
         {
             Move(transform.right);
+            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[3];
         }
         // Adjust speed based on whether the Left Shift key is held down
         if (Input.GetKey(KeyCode.LeftShift))

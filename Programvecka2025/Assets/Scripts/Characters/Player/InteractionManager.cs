@@ -12,7 +12,7 @@ using static battleState;
 [CreateAssetMenu(fileName = "InteractionManager", menuName = "Scriptable Objects/InteractionManager")]
 public class InteractionManager : MonoBehaviour
 {
-    public InteractionManager playerInteracter; // Add a reference to the PlayerInteracter instance
+    public PlayerInteracter playerInteracter; // Add a reference to the PlayerInteracter instance
 
     public string charName;
     public float[] position = new float[2];
@@ -31,10 +31,10 @@ public class InteractionManager : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        // kollar om spelarens interacter och dess gameobject inte är null  
+        // kollar om spelarens interacter och dess gameobject inte ï¿½r null  
         if (characterGameObject == null)
             return;
-        // Kollar om spelaren har hälsa kvar och om den kolliderar med en fiende
+        // Kollar om spelaren har hï¿½lsa kvar och om den kolliderar med en fiende
         bool isAttacked = false;
         if (this.playerInteracter.health > 0)
         {
@@ -50,10 +50,10 @@ public class InteractionManager : MonoBehaviour
         }
 
     }
-    // Sätter upp data för striden mellan spelaren och fienden
+    // Sï¿½tter upp data fï¿½r striden mellan spelaren och fienden
     private void setBattleData(Collider2D other)
     {
-        // Sätter spelarens position
+        // Sï¿½tter spelarens position
         playerInteracter.position[0] = playerInteracter.characterGameObject.transform.position.x;
         playerInteracter.position[1] = playerInteracter.characterGameObject.transform.position.y;
 
@@ -72,6 +72,37 @@ public class InteractionManager : MonoBehaviour
 
             }
 
+         IEnumerator EnemyTurn()
+        {
+            
+            // as before, decrease playerhealth by a fixed
+            // amount of 10. You probably want to have some
+            // more complex logic here.
+            playerStatus.health(playerStatus, 10);
+
+            // play attack animation by triggering
+            // it inside the enemy animator
+            EnemyStatus.GetComponent<Animator>().SetTrigger("Attack");
+
+            yield return new WaitForSeconds(2);
+
+            if (playerStatus.health <= 0)
+            {
+                // if the player health drops to 0 
+                // we have lost the battle...
+                battleState = BattleState.LOST;
+                yield return StartCoroutine(EndBattle());
+            }
+            else
+            {
+                // if the player health is still
+                // above 0 when the turn finishes
+                // it's our turn again!
+                battleState = BattleState.PLAYERTURN;
+                yield return StartCoroutine(PlayerTurn());
+            }
+         
+          }
         }
     }
 }
