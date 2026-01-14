@@ -11,7 +11,7 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu(fileName = "InteractionManager", menuName = "Scriptable Objects/InteractionManager")]
 public class InteractionManager : MonoBehaviour
 {
-    public PlayerInteracter playerInteracter; // Add a reference to the PlayerInteracter instance
+    /*public PlayerInteracter playerInteracter; // Add a reference to the PlayerInteracter instance
 
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -84,4 +84,5 @@ public class InteractionManager : MonoBehaviour
             }
         }
     }
+    */
 }

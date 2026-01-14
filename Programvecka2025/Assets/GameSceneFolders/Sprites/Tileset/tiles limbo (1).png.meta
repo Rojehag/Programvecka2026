@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 21253fd8d94cdf44988928986adbd57f
+guid: 110ee0f064a4bc440b7d71246eec7fd0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8966352547736134083
-    second: tiles limbo_0
+      213: 5137819380695719583
+    second: tiles limbo (1)_0
+  - first:
+      213: 8654245835987248467
+    second: tiles limbo (1)_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tiles limbo_0
+      name: tiles limbo (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +144,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c12bbae222ee6c70800000000000000
-      internalID: 8966352547736134083
+      spriteID: f9e5c7261833d4740800000000000000
+      internalID: 5137819380695719583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_1
+      name: tiles limbo (1)_1
       rect:
         serializedVersion: 2
         x: 16
@@ -161,16 +164,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 47d604636bacea34892c41250b340f10
-      internalID: 667354298
+      spriteID: 3556ce45cbe0a1870800000000000000
+      internalID: 8654245835987248467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_2
+      name: tiles limbo (1)_2
       rect:
         serializedVersion: 2
         x: 32
@@ -185,14 +188,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 337115cc3cbba5047952167b8cff38f6
-      internalID: -557052033
+      spriteID: 72b27493053202644b027b7dd8ed869f
+      internalID: 1034040658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_3
+      name: tiles limbo (1)_3
       rect:
         serializedVersion: 2
         x: 0
@@ -207,14 +210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3845682e5bbb25d4fb58c13f322f49a8
-      internalID: -33062030
+      spriteID: 55e257333c615e140ac614eed63e2702
+      internalID: 4382639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_4
+      name: tiles limbo (1)_4
       rect:
         serializedVersion: 2
         x: 16
@@ -229,14 +232,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dd35de7ff33e7640ac724c3470cb3d1
-      internalID: -1131120026
+      spriteID: b26d79f33c1c22e48914bc1612576a64
+      internalID: 248170421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_5
+      name: tiles limbo (1)_5
       rect:
         serializedVersion: 2
         x: 32
@@ -251,14 +254,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88170fd4202bebe4a886e84d22cfa0cb
-      internalID: 1852697706
+      spriteID: 0cb9fc05a6f86044fae73832086da120
+      internalID: -104147287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_6
+      name: tiles limbo (1)_6
       rect:
         serializedVersion: 2
         x: 80
@@ -273,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 364f7ebd544557047b41555c24916c7c
-      internalID: 2083021643
+      spriteID: 3c1d82979a43de84d9d727dff07bbf80
+      internalID: 302274656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_7
+      name: tiles limbo (1)_7
       rect:
         serializedVersion: 2
         x: 96
@@ -295,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cf20e2d10019cb428ebdf1a1de32f42
-      internalID: 775824749
+      spriteID: c1d014124e3c16746843f2a6dc397790
+      internalID: 1716440155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_8
+      name: tiles limbo (1)_8
       rect:
         serializedVersion: 2
         x: 0
@@ -317,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb4dd00886ce52c4ab35d17beffea618
-      internalID: 1951100322
+      spriteID: 5cca96e833337054bba092b9bafdd8cc
+      internalID: -2128871978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_9
+      name: tiles limbo (1)_9
       rect:
         serializedVersion: 2
         x: 16
@@ -339,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdc72ffa64b55094db506c5c1ff9ce82
-      internalID: 478067753
+      spriteID: e340003252546b74db09cc5548a381a5
+      internalID: -961372202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_10
+      name: tiles limbo (1)_10
       rect:
         serializedVersion: 2
         x: 32
@@ -361,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f4cf4f7ad6367b4d93351a38a9af51c
-      internalID: -1452367682
+      spriteID: d8faa826e6e653247aa53685624744db
+      internalID: 1541516842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_11
+      name: tiles limbo (1)_11
       rect:
         serializedVersion: 2
         x: 80
@@ -383,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e83f846f0e3f3d64882da18eeebc898b
-      internalID: -1825160784
+      spriteID: e26633104f42897488ed0e4349c6e69b
+      internalID: 1493618334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_12
+      name: tiles limbo (1)_12
       rect:
         serializedVersion: 2
         x: 96
@@ -405,14 +408,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b385bdb50d1b62b41b793bea15490139
-      internalID: 1595400187
+      spriteID: 14e815a961f0eff4ea9281c358f1e80c
+      internalID: -770135176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_13
+      name: tiles limbo (1)_13
       rect:
         serializedVersion: 2
         x: 48
@@ -427,14 +430,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a37228f9c68ed7b43b568f39e8dff9a0
-      internalID: 999477567
+      spriteID: 864d72c9b80af2841b38f0dc91f3313f
+      internalID: 1242085575
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tiles limbo_14
+      name: tiles limbo (1)_14
       rect:
         serializedVersion: 2
         x: 64
@@ -449,8 +452,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 005d4015d3bc2af479b734170c7fe0ac
-      internalID: 1726124918
+      spriteID: e5636ade086e3a84c9671533fc4fa3c7
+      internalID: -335293915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles limbo (1)_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a76e0a44677fc54d8bc9033a70539a7
+      internalID: -1291145590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles limbo (1)_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472baae6b54a044469c6b97284ac29c5
+      internalID: -1266825559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles limbo (1)_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6062a624f79942d4abf6aeed50b6653f
+      internalID: -1527591138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiles limbo (1)_18
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a88a7ffdefd114099d009a5cf83c2f
+      internalID: 1067250795
       vertices: []
       indices: 
       edges: []
@@ -459,7 +550,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c95d7efe912398946b425c3fac9704db
+    spriteID: ed8b38a0bda05a0498ac0cd4bef63d49
     internalID: 0
     vertices: []
     indices: 
@@ -471,21 +562,25 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":8.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      tiles limbo_0: 8966352547736134083
-      tiles limbo_1: 667354298
-      tiles limbo_10: -1452367682
-      tiles limbo_11: -1825160784
-      tiles limbo_12: 1595400187
-      tiles limbo_13: 999477567
-      tiles limbo_14: 1726124918
-      tiles limbo_2: -557052033
-      tiles limbo_3: -33062030
-      tiles limbo_4: -1131120026
-      tiles limbo_5: 1852697706
-      tiles limbo_6: 2083021643
-      tiles limbo_7: 775824749
-      tiles limbo_8: 1951100322
-      tiles limbo_9: 478067753
+      tiles limbo (1)_0: 5137819380695719583
+      tiles limbo (1)_1: 8654245835987248467
+      tiles limbo (1)_10: 1541516842
+      tiles limbo (1)_11: 1493618334
+      tiles limbo (1)_12: -770135176
+      tiles limbo (1)_13: 1242085575
+      tiles limbo (1)_14: -335293915
+      tiles limbo (1)_15: -1291145590
+      tiles limbo (1)_16: -1266825559
+      tiles limbo (1)_17: -1527591138
+      tiles limbo (1)_18: 1067250795
+      tiles limbo (1)_2: 1034040658
+      tiles limbo (1)_3: 4382639
+      tiles limbo (1)_4: 248170421
+      tiles limbo (1)_5: -104147287
+      tiles limbo (1)_6: 302274656
+      tiles limbo (1)_7: 1716440155
+      tiles limbo (1)_8: -2128871978
+      tiles limbo (1)_9: -961372202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
