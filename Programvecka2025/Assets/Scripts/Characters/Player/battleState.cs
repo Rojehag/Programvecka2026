@@ -80,21 +80,7 @@ public class battleState : MonoBehaviour
                 }
             }
 
-            // Ensure EndBattle coroutine is properly closed
-            IEnumerator EndBattle()
-            {
-                if (battlEState == BattleState.WIN)
-                {
-                    yield return new WaitForSeconds(1);
-                }
-                else if (battlEState == BattleState.LOST)
-                {
-                    yield return new WaitForSeconds(1);
-                }
-            }
-            // block user from repeatedly 
-            // pressing attack button  
-            hasClicked = true;
+           
         }
 
     }
