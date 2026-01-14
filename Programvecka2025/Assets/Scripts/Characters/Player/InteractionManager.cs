@@ -56,6 +56,7 @@ public class InteractionManager : MonoBehaviour
 
          IEnumerator EnemyTurn()
         {
+            
             // as before, decrease playerhealth by a fixed
             // amount of 10. You probably want to have some
             // more complex logic here.
@@ -82,7 +83,9 @@ public class InteractionManager : MonoBehaviour
                 battleState = BattleState.PLAYERTURN;
                 yield return StartCoroutine(PlayerTurn());
             }
+            
         }
     }
+
     */
 }

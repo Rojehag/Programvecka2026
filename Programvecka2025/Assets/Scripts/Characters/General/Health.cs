@@ -3,8 +3,9 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    int currentHealth = 100;
+    protected int currentHealth = 100;
     int armorAmount = 0;
+    [SerializeField] protected HealthBar healthBar;
 
     private void Start()
     {
@@ -14,7 +15,7 @@ public class Health : MonoBehaviour
 
 
     // Method to change health
-    public void ChangeHealth(int amount)
+    public virtual void ChangeHealth(int amount)
     {
         // If amount is negative, remove armor first
         if (amount < 0)
