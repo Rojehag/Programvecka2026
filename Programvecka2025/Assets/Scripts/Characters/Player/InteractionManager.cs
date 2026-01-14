@@ -12,7 +12,7 @@ using static battleState;
 [CreateAssetMenu(fileName = "InteractionManager", menuName = "Scriptable Objects/InteractionManager")]
 public class InteractionManager : MonoBehaviour
 {
-    public PlayerInteracter playerInteracter; // Add a reference to the PlayerInteracter instance
+    public InteractionManager playerInteracter; // Add a reference to the PlayerInteracter instance
 
     public string charName;
     public float[] position = new float[2];
@@ -71,38 +71,8 @@ public class InteractionManager : MonoBehaviour
                 enemyStatus.level = enemyStatus.level;
 
             }
-
-         IEnumerator EnemyTurn()
-        {
-            
-            // as before, decrease playerhealth by a fixed
-            // amount of 10. You probably want to have some
-            // more complex logic here.
-            playerStatus.health(playerStatus, 10);
-
-            // play attack animation by triggering
-            // it inside the enemy animator
-            EnemyStatus.GetComponent<Animator>().SetTrigger("Attack");
-
-            yield return new WaitForSeconds(2);
-
-            if (playerStatus.health <= 0)
-            {
-                // if the player health drops to 0 
-                // we have lost the battle...
-                battleState = BattleState.LOST;
-                yield return StartCoroutine(EndBattle());
-            }
-            else
-            {
-                // if the player health is still
-                // above 0 when the turn finishes
-                // it's our turn again!
-                battleState = BattleState.PLAYERTURN;
-                yield return StartCoroutine(PlayerTurn());
-            }
          
           }
         }
     }
-}
+
