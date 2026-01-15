@@ -10,6 +10,8 @@ public class ButtonScript : MonoBehaviour
 {
     float time;
     bool delayYourTurn = false;
+
+    [SerializeField]LevelLoader levelLoader;
     private void Update()
     {
         time += Time.time;
@@ -46,7 +48,9 @@ public class ButtonScript : MonoBehaviour
 
     public void PlayButton()
     {
-        SceneManager.LoadScene(1);
+        levelLoader.LoadNextLevel();
+        //SceneManager.LoadScene(1);
+
     }
 
     public void ExitButton()
