@@ -20,7 +20,7 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
-    IEnumerator LoadLevel(int levelIndex)
+    public IEnumerator LoadLevel(int levelIndex)
     {
         transition.SetTrigger("Start");
         musicFade.FadeInMusic();
