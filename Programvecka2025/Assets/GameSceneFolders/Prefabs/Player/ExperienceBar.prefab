@@ -84,7 +84,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6075339626048333506}
-  - component: {fileID: 5424383351913835740}
   m_Layer: 5
   m_Name: ExperienceBar
   m_TagString: Untagged
@@ -114,19 +113,6 @@ RectTransform:
   m_AnchoredPosition: {x: 165.41, y: -141}
   m_SizeDelta: {x: 179.33, y: 179.66}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5424383351913835740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3733069714751935468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce21664585080f14cba2de09f487d66f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealthBar
-  fillImage: {fileID: 5984962199249276733}
 --- !u!1 &7759785228511752463
 GameObject:
   m_ObjectHideFlags: 0

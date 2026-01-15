@@ -301,8 +301,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5597922131918856173, guid: 0150bd1460aa58b49bd115c3fabe6643, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8351723306105412862, guid: 0150bd1460aa58b49bd115c3fabe6643, type: 3}
+      propertyPath: musicFade
+      value: 
+      objectReference: {fileID: 792041713}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -417,7 +421,10 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 2924350992649482456, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3733069714751935468, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1942318472}
   m_SourcePrefab: {fileID: 100100000, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
 --- !u!224 &237590753 stripped
 RectTransform:
@@ -4818,7 +4825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerQuestManager
   basestats: {fileID: 792041704}
-  experienceBar: {fileID: 0}
+  experienceBar: {fileID: 1942318472}
 --- !u!114 &792041704 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8051837423642895707, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
@@ -6686,8 +6693,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230887020}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.696, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.69599915, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11558,6 +11565,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce21664585080f14cba2de09f487d66f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
+--- !u!114 &1744128949 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5984962199249276733, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
+  m_PrefabInstance: {fileID: 237590752}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!1 &1942318471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3733069714751935468, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
+  m_PrefabInstance: {fileID: 237590752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1942318472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942318471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b982cb70629ee6b4cbd327a5426d01a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExperienceBar
+  fillImage: {fileID: 1744128949}
 --- !u!1001 &361868705124717893
 PrefabInstance:
   m_ObjectHideFlags: 0
