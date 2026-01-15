@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
@@ -40,5 +41,16 @@ public class ButtonScript : MonoBehaviour
         textMeshProUGUIs[0].SetText("Your Turn!");
         
 
+
+    }
+
+    public void PlayButton()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void ExitButton()
+    {
+        Application.Quit();
     }
 }
