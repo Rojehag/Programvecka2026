@@ -1,6 +1,8 @@
 using Assets.Scripts.GameReliant;
 using NUnit.Framework;
 using System.Collections.Generic;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerQuestManager : MonoBehaviour
@@ -8,7 +10,8 @@ public class PlayerQuestManager : MonoBehaviour
     List<Quest> quests = new List<Quest>();
     [SerializeField] Basestats basestats;
     [SerializeField] ExperienceBar experienceBar;
-    
+    [SerializeField] TextMeshProUGUI questText;
+
     // Update is called once per frame
     void Update()
     {
@@ -16,9 +19,11 @@ public class PlayerQuestManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            IncreaseQuestProgress("Demon Hunter", 1);
+            IncreaseQuestProgress("Soul Collecter", 1);
+            ShowQuests();
         }
         experienceBar.SetExperience(basestats.experiancePoints);
+        
     }
 
     public void IncreaseQuestProgress(string questName, int amount)
@@ -41,5 +46,14 @@ public class PlayerQuestManager : MonoBehaviour
     public void AddQuest(Quest quest)
     {
         quests.Add(quest);
+    }
+    public void ShowQuests()
+    {
+        
+        questText.text = "";
+        for(int i = 0; i < quests.Count; i++)
+        {
+            questText.text += quests[i].title + " " + quests[i].progress + "/" + quests[i].completeAmount + "\n";
+        }
     }
 }
