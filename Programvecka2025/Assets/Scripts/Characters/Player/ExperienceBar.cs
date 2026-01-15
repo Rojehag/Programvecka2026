@@ -3,10 +3,10 @@ using UnityEngine.UI;
 
 public class ExperienceBar : MonoBehaviour
 {
-    public Slider expSlider;
+    public Image fillImage;
 
     public void SetExperience(int Experience) 
     { 
-        expSlider.value = Experience;
+        fillImage.fillAmount = Experience / 100f;
     }
 }
