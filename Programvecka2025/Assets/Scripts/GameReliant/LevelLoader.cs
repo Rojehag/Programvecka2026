@@ -23,7 +23,7 @@ public class LevelLoader : MonoBehaviour
     public IEnumerator LoadLevel(int levelIndex)
     {
         transition.SetTrigger("Start");
-        musicFade.FadeInMusic();
+        musicFade.FadeMusic();
 
         yield return new WaitForSeconds(transitionTime);
 

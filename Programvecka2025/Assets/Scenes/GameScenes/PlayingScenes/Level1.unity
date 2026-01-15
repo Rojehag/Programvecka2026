@@ -305,7 +305,7 @@ PrefabInstance:
     - target: {fileID: 8351723306105412862, guid: 0150bd1460aa58b49bd115c3fabe6643, type: 3}
       propertyPath: musicFade
       value: 
-      objectReference: {fileID: 792041713}
+      objectReference: {fileID: 710626268}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4733,6 +4733,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &710626268 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 828069802396861231, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+  m_PrefabInstance: {fileID: 4067191794934017169}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f71538c3d6a87db4ea9e7c275c29a2fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicFade
 --- !u!1001 &792041701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4744,6 +4755,10 @@ PrefabInstance:
     - target: {fileID: 1146777271308632114, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2497122563962469777, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4467084268174764700, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
       propertyPath: healthBar
@@ -4793,22 +4808,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8367057398098057640, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367057398098057640, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+      propertyPath: musicAnimator
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433839611136266244, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
---- !u!114 &792041713 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8367057398098057640, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
-  m_PrefabInstance: {fileID: 792041701}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f71538c3d6a87db4ea9e7c275c29a2fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MusicFade
 --- !u!1 &936945145
 GameObject:
   m_ObjectHideFlags: 0
@@ -6604,7 +6620,7 @@ PrefabInstance:
     - target: {fileID: 1647746980308284363, guid: 56fc006113cde0f4c9928da8b8913fae, type: 3}
       propertyPath: musicFade
       value: 
-      objectReference: {fileID: 792041713}
+      objectReference: {fileID: 0}
     - target: {fileID: 3733069714751935468, guid: 56fc006113cde0f4c9928da8b8913fae, type: 3}
       propertyPath: m_Name
       value: Healthbar
@@ -6694,6 +6710,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56fc006113cde0f4c9928da8b8913fae, type: 3}
+--- !u!1001 &4067191794934017169
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5399553871489473164, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_Name
+      value: MainMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167869754184303370, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.31279
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167869754184303370, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 78.67208
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167869754184303370, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167869754184303370, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167869754184303370, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167869754184303370, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167869754184303370, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167869754184303370, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167869754184303370, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7167869754184303370, guid: 84dea018993228647b4d4852e33e8324, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84dea018993228647b4d4852e33e8324, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -6703,3 +6776,4 @@ SceneRoots:
   - {fileID: 1428860443}
   - {fileID: 415593123}
   - {fileID: 936945148}
+  - {fileID: 4067191794934017169}
