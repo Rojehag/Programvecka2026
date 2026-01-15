@@ -4,7 +4,8 @@ using System.Collections;
 
 public class LevelLoader : MonoBehaviour
 {
-    [SerializeField] MusicFade musicFade;
+    public Animator transition;
+    [SerializeField] float transitionTime = 1f;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.N))
@@ -13,8 +14,6 @@ public class LevelLoader : MonoBehaviour
         }
     }
 
-    public Animator transition;
-    [SerializeField] float transitionTime = 1f;
     public virtual void LoadNextLevel()
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
@@ -23,7 +22,6 @@ public class LevelLoader : MonoBehaviour
     public IEnumerator LoadLevel(int levelIndex)
     {
         transition.SetTrigger("Start");
-        musicFade.FadeMusic();
 
         yield return new WaitForSeconds(transitionTime);
 
