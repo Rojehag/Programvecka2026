@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: dc101e33cf45a6e428dde6738afc230f
+guid: 3a9e803cee9ac3242b006cdb0d4b7ce1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1910833290489959120
-    second: virgil side left-Sheet_0
+      213: 8135331102418489010
+    second: gluttony tileset_0
   - first:
-      213: 2486293403057095745
-    second: virgil side left-Sheet_1
+      213: -188812443693780784
+    second: gluttony tileset_1
   - first:
-      213: 4585009886568299376
-    second: virgil side left-Sheet_2
+      213: 3127448355464813650
+    second: gluttony tileset_2
   - first:
-      213: -4789365748547610664
-    second: virgil side left-Sheet_3
+      213: -8765611207295017523
+    second: gluttony tileset_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -135,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: virgil side left-Sheet_0
+      name: gluttony tileset_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 1
-        width: 14
-        height: 26
+        x: 0
+        y: 79
+        width: 49
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d215a0f0c4a48a10800000000000000
-      internalID: 1910833290489959120
+      spriteID: 2be47d9e88086e070800000000000000
+      internalID: 8135331102418489010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: virgil side left-Sheet_1
+      name: gluttony tileset_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 2
-        width: 14
-        height: 26
+        x: 55
+        y: 79
+        width: 18
+        height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1448d985da6118220800000000000000
-      internalID: 2486293403057095745
+      spriteID: 0d075743514316df0800000000000000
+      internalID: -188812443693780784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: virgil side left-Sheet_2
+      name: gluttony tileset_2
       rect:
         serializedVersion: 2
-        x: 73
-        y: 1
-        width: 14
-        height: 26
+        x: 0
+        y: 55
+        width: 49
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 07bbe8c033a31af30800000000000000
-      internalID: 4585009886568299376
+      spriteID: 25c1cd895bde66b20800000000000000
+      internalID: 3127448355464813650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: virgil side left-Sheet_3
+      name: gluttony tileset_3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 1
-        width: 14
-        height: 27
+        x: 55
+        y: 55
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d795621a31c88db0800000000000000
-      internalID: -4789365748547610664
+      spriteID: dcd5ff59c0b4a5680800000000000000
+      internalID: -8765611207295017523
       vertices: []
       indices: 
       edges: []
@@ -236,10 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      virgil side left-Sheet_0: 1910833290489959120
-      virgil side left-Sheet_1: 2486293403057095745
-      virgil side left-Sheet_2: 4585009886568299376
-      virgil side left-Sheet_3: -4789365748547610664
+      gluttony tileset_0: 8135331102418489010
+      gluttony tileset_1: -188812443693780784
+      gluttony tileset_2: 3127448355464813650
+      gluttony tileset_3: -8765611207295017523
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
