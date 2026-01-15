@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Characters.Player
 {
-    public class EnemyStatus
+    public class EnemyStatus : ScriptableObject
     {
         public string charName;
         public float[] position;

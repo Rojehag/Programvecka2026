@@ -2,7 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PlayerInteracter", menuName = "Scriptable Objects/PlayerInteracter")]
-public class playerStatus : MonoBehaviour
+public class playerStatus : ScriptableObject
 {
     public string charName;
     public float[] position = new float[2];

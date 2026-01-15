@@ -9,8 +9,8 @@ using static battleState;
 
 
 
-[CreateAssetMenu(fileName = "InteractionManager", menuName = "Scriptable Objects/InteractionManager")]
-public class InteractionManager : MonoBehaviour
+[CreateAssetMenu(fileName = "InteractionManager", menuName =     "Scriptable Objects/InteractionManager")]
+public class InteractionManager : ScriptableObject
 {
     public InteractionManager playerInteracter; // Add a reference to the PlayerInteracter instance
 
