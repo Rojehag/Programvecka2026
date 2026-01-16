@@ -65,10 +65,7 @@ public class VirgilMovment : MonoBehaviour
         {
             danteClose = true;
         }
-        else
-        {
-            danteClose = false;
-        }
+       
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
