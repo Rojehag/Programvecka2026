@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22cf107032bfa74fbf1726fa9327589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonScript
-  levelLoader: {fileID: 0}
+  levelLoader: {fileID: 2132669732}
   listGameObjects: []
   textMeshProUGUIs: []
 --- !u!1 &945992374
@@ -765,7 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22cf107032bfa74fbf1726fa9327589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonScript
-  levelLoader: {fileID: 0}
+  levelLoader: {fileID: 2132669732}
   listGameObjects: []
   textMeshProUGUIs: []
 --- !u!1001 &1213080101
@@ -1417,6 +1417,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 222083948832850794, guid: 0150bd1460aa58b49bd115c3fabe6643, type: 3}
   m_PrefabInstance: {fileID: 1922334753}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2132669732 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8351723306105412862, guid: 0150bd1460aa58b49bd115c3fabe6643, type: 3}
+  m_PrefabInstance: {fileID: 1922334753}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 217216caba7be574f929ed09090be46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
