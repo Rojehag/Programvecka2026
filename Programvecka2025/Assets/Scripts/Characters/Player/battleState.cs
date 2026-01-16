@@ -3,12 +3,13 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class battleState : MonoBehaviour
 
-
+ 
 {
-    
+    // Enum to represent different states of the battle
     public enum BattleState { START, PLAYERTURN, ENEMYTURN, WIN, LOST }
     private GameObject enemy;
     private GameObject player;
@@ -25,6 +26,7 @@ public class battleState : MonoBehaviour
     void Start()
     {
         {
+            // starting the battle
             battlEState = BattleState.START;
             StartCoroutine(BeginBattle());
         }
@@ -49,8 +51,10 @@ public class battleState : MonoBehaviour
         // so that player can click on 'attack' button    
         hasClicked = false;
     }
+
     public void OnAttackButtonPress(BaseEventData eventData)
     {
+        // setting up event trigger for 'attack' button
         EventTriggerType eventType = EventTriggerType.PointerClick;
         EventTrigger evTrigg = gameObject.AddComponent<EventTrigger>();
         EventTrigger.Entry ClickEvent = new EventTrigger.Entry();
@@ -58,6 +62,8 @@ public class battleState : MonoBehaviour
         // button if it's not his turn!
         if (battlEState != BattleState.PLAYERTURN)
             return;
+        if (enemyStatus.health == 0)
+        { print("Enemy Defeated"); }
 
         // allow only a single action per turn
         if (!hasClicked)
@@ -119,7 +125,7 @@ public class battleState : MonoBehaviour
         IEnumerator PlayerAttack()
         {
 
-
+           yield return new WaitForSeconds(1);
 
             yield return new WaitForSeconds(2);
 
@@ -129,6 +135,7 @@ public class battleState : MonoBehaviour
                 // we won!
                 battlEState = BattleState.WIN;
                 yield return StartCoroutine(EndBattle());
+
             }
             else
             {
@@ -160,6 +167,7 @@ public class battleState : MonoBehaviour
                     yield return StartCoroutine(PlayerTurn());
 
                     
+                        
 
                     
                 }
