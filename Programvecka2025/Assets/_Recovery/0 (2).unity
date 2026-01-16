@@ -943,11 +943,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Characters.Player.EnemyStatus
   charName: 
-  position:
-  - 0
-  - 0
-  characterGameObject: {fileID: 470388086}
-  level: 1
+  position: []
+  characterGameObject: {fileID: 523182441}
+  level: 0
   health: 200
   enemy: {fileID: 523182442}
   attackPower: {fileID: 390419249}
@@ -1342,10 +1340,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1379955837620908432, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7948080177764977347, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
       propertyPath: m_LocalScale.x
       value: 100
@@ -1360,7 +1354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7948080177764977347, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 662.495
+      value: 769
       objectReference: {fileID: 0}
     - target: {fileID: 7948080177764977347, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1427,10 +1421,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc98cca520b4044fa9dda0d23376372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::battleState
-  enemyBattlePosition: {fileID: 2133474904}
+  enemyBattlePosition: {fileID: 0}
   playerBattlePosition: {fileID: 390419247}
   playerStatus: {fileID: 390419249}
-  enemyStatus: {fileID: 2133474905}
+  enemyStatus: {fileID: 0}
 --- !u!114 &390419249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1444,13 +1438,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerStatus
   charName: 
-  position:
-  - 0
-  - 0
-  characterGameObject: {fileID: 470388086}
-  level: 1
-  health: 200
-  player: {fileID: 1643144098}
+  position: []
+  characterGameObject: {fileID: 390419246}
+  level: 0
+  health: 0
+  player: {fileID: 470388087}
   attackPower: 50
 --- !u!1 &455586118
 GameObject:
@@ -1464,10 +1456,8 @@ GameObject:
   - component: {fileID: 455586122}
   - component: {fileID: 455586121}
   - component: {fileID: 455586120}
+  - component: {fileID: 455586123}
   - component: {fileID: 455586124}
-  - component: {fileID: 455586127}
-  - component: {fileID: 455586126}
-  - component: {fileID: 455586125}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -1577,6 +1567,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455586118}
   m_CullTransparentMesh: 1
+--- !u!114 &455586123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455586118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc98cca520b4044fa9dda0d23376372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::battleState
+  enemyBattlePosition: {fileID: 1097607361}
+  playerBattlePosition: {fileID: 1097607361}
+  playerStatus: {fileID: 0}
+  enemyStatus: {fileID: 0}
 --- !u!50 &455586124
 Rigidbody2D:
   serializedVersion: 5
@@ -1604,81 +1610,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &455586125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455586118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
-  m_SendPointerHoverToParent: 1
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
-  m_ScrollDeltaPerTick: 6
---- !u!114 &455586126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455586118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 11500000, guid: dfc98cca520b4044fa9dda0d23376372, type: 3}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &455586127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455586118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
-  m_FirstSelected: {fileID: 455586118}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
 --- !u!1 &470388086
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,11 +2825,6 @@ MonoBehaviour:
   - {fileID: 103679107}
   textMeshProUGUIs:
   - {fileID: 1897557965}
---- !u!4 &1643144098 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7948080177764977347, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
-  m_PrefabInstance: {fileID: 1877840632}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1649952336
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,10 +3128,6 @@ PrefabInstance:
     - target: {fileID: 1146777271308632114, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1379955837620908432, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7948080177764977347, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3851,11 +3773,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3393472472944827959, guid: 889c17cda52bfd94bbd1e5f25fb6b73a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1375.809
+      value: 1021
       objectReference: {fileID: 0}
     - target: {fileID: 3393472472944827959, guid: 889c17cda52bfd94bbd1e5f25fb6b73a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 772
+      value: 753
       objectReference: {fileID: 0}
     - target: {fileID: 3393472472944827959, guid: 889c17cda52bfd94bbd1e5f25fb6b73a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3894,17 +3816,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2133474905}
     - target: {fileID: 6890599156041045414, guid: 889c17cda52bfd94bbd1e5f25fb6b73a, type: 3}
-      propertyPath: playerStatus
-      value: 
-      objectReference: {fileID: 390419249}
-    - target: {fileID: 6890599156041045414, guid: 889c17cda52bfd94bbd1e5f25fb6b73a, type: 3}
       propertyPath: enemyBattlePosition
       value: 
       objectReference: {fileID: 2133474904}
-    - target: {fileID: 6890599156041045414, guid: 889c17cda52bfd94bbd1e5f25fb6b73a, type: 3}
-      propertyPath: playerBattlePosition
-      value: 
-      objectReference: {fileID: 1643144098}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3938,10 +3852,10 @@ MonoBehaviour:
   charName: 
   position: []
   characterGameObject: {fileID: 523182441}
-  level: 1
+  level: 0
   health: 200
   enemy: {fileID: 523182442}
-  attackPower: {fileID: 390419249}
+  attackPower: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
