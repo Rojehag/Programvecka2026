@@ -8,7 +8,7 @@ public class StartBattle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F) && isPlayerInRange)
+        if (Input.GetKeyDown(KeyCode.E) && isPlayerInRange)
         {
             StartFight();
         }
@@ -26,7 +26,10 @@ public class StartBattle : MonoBehaviour
 
     void StartFight()
     {
+        PlayerPrefs.SetFloat("playerx",transform.position.x);
+        PlayerPrefs.SetFloat("playery",transform.position.y);
+        
         print("Let's start fighting!!!");
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 }
