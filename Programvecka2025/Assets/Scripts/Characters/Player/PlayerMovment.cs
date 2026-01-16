@@ -45,7 +45,6 @@ public class PlayerMovment : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             Move(transform.up);
-            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[0];
             dustParticles.SetActive(true);
             dustParticles.transform.rotation = Quaternion.Euler(0, 0, 90);
             GetComponent<Animator>().enabled = true;
@@ -55,7 +54,6 @@ public class PlayerMovment : MonoBehaviour
         if(Input.GetKey(KeyCode.S))
         {
             Move(-transform.up);
-            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[1];
             dustParticles.SetActive(true);
             dustParticles.transform.rotation = Quaternion.Euler(0, 0, -90);
             GetComponent<Animator>().enabled = true;
@@ -64,7 +62,6 @@ public class PlayerMovment : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             Move(-transform.right);
-            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[2];
             dustParticles.SetActive(true);
             dustParticles.transform.rotation = Quaternion.Euler(0, 0, 180);
             GetComponent<Animator>().enabled = true;
@@ -73,7 +70,6 @@ public class PlayerMovment : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             Move(transform.right);
-            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[3];
             dustParticles.SetActive(true);
             dustParticles.transform.rotation = Quaternion.Euler(0, 0, 0);
             GetComponent<Animator>().enabled = true;
