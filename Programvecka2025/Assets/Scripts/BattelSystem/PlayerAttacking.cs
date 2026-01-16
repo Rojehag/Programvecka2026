@@ -14,6 +14,7 @@ public class PlayerAttacking : MonoBehaviour
 
     [SerializeField] GameObject attacker;
 
+    [SerializeField] GameObject soundController;
 
     [SerializeField] List<TextMeshProUGUI> damageText = new List<TextMeshProUGUI>();
 

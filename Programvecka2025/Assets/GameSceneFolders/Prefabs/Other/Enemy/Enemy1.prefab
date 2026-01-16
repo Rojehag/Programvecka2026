@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 1071617812059423213}
   - component: {fileID: 105312192557269534}
   - component: {fileID: 7276088826715766439}
-  - component: {fileID: 6890599156041045414}
+  - component: {fileID: 4384879480138587796}
+  - component: {fileID: 2488298236069145534}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 100, y: 100, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,9 +83,9 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1644059721, guid: 88a519a1a5fee834ca164262a37c3299, type: 3}
+  m_Sprite: {fileID: 3430719962279189809, guid: b6db8028e1185e74cb329337bbf0d7f1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   healthBar: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &7276088826715766439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +128,7 @@ MonoBehaviour:
   dodegeChance: 20
   experiancePoints: 0
   levelBuffMultipier: 1.23
---- !u!114 &6890599156041045414
+--- !u!114 &4384879480138587796
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,10 +137,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 2352800755011398111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfc98cca520b4044fa9dda0d23376372, type: 3}
+  m_Script: {fileID: 11500000, guid: 128c3f4c8e4dd8b4c979635ec03d214c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::battleState
-  enemyBattlePosition: {fileID: 0}
-  playerBattlePosition: {fileID: 0}
-  playerStatus: {fileID: 0}
-  enemyStatus: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::StartBattle
+--- !u!58 &2488298236069145534
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2352800755011398111}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 2

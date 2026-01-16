@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyHealth : Health
 {
+    [SerializeField] GameObject player;
     
     private void Update()
     {
@@ -17,5 +19,7 @@ public class EnemyHealth : Health
         // Add enemy death effects here (e.g., play animation, drop loot)
         Debug.Log("Enemy has died.");
         Destroy(gameObject);
+        SceneManager.LoadScene(1);
+        player.transform.position = new Vector2(PlayerPrefs.GetFloat("playerx", 0), PlayerPrefs.GetFloat("playery", 0));
     }
 }
