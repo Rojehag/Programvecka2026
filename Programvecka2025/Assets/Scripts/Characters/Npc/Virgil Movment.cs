@@ -5,6 +5,8 @@ public class VirgilMovment : MonoBehaviour
 {
     [SerializeField] GameObject Dante;
 
+    [SerializeField] GameObject dustParticles;
+
     int speed;
     int maxspeed = 5;
 
@@ -19,6 +21,7 @@ public class VirgilMovment : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody2D>();
         GetComponent<Animator>().enabled = false;
+        dustParticles.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,21 +43,29 @@ public class VirgilMovment : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
+            dustParticles.SetActive(true);
+            dustParticles.transform.rotation = Quaternion.Euler(0, 0, 90);
             GetComponent<Animator>().enabled = true;
             GetComponent<Animator>().SetBool("Up", true);
         }
         if (Input.GetKey(KeyCode.S))
         {
+            dustParticles.SetActive(true);
+            dustParticles.transform.rotation = Quaternion.Euler(0, 0, -90);
             GetComponent<Animator>().enabled = true;
             GetComponent<Animator>().SetBool("Down", true);
         }
         if (Input.GetKey(KeyCode.A))
         {
+            dustParticles.SetActive(true);
+            dustParticles.transform.rotation = Quaternion.Euler(0, 0, 180);
             GetComponent<Animator>().enabled = true;
             GetComponent<Animator>().SetBool("Left", true);
         }
         if (Input.GetKey(KeyCode.D))
         {
+            dustParticles.SetActive(true);
+            dustParticles.transform.rotation = Quaternion.Euler(0, 0, 0);
             GetComponent<Animator>().enabled = true;
             GetComponent<Animator>().SetBool("Right", true);
         }
@@ -62,6 +73,7 @@ public class VirgilMovment : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.W))
         {
             GetComponent<Animator>().SetBool("Up", false);
+            dustParticles.SetActive(false);
             GetComponent<Animator>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[0];
         }
@@ -69,6 +81,7 @@ public class VirgilMovment : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.S))
         {
             GetComponent<Animator>().SetBool("Down", false);
+            dustParticles.SetActive(false);
             GetComponent<Animator>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[1];
         }
@@ -76,12 +89,14 @@ public class VirgilMovment : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.A))
         {
             GetComponent<Animator>().SetBool("Left", false);
+            dustParticles.SetActive(false);
             GetComponent<Animator>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[2];
         }
         if (Input.GetKeyUp(KeyCode.D))
         {
             GetComponent<Animator>().SetBool("Right", false);
+            dustParticles.SetActive(false);
             GetComponent<Animator>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[3];
         }
