@@ -26,9 +26,5 @@ public class PlayerHealth : Health
         Debug.Log("Player has died.");
     }
 
-    public override void ChangeHealth(int amount)
-    {
-        base.ChangeHealth(amount);
-        healthBar.SetHealth(GetCurrentHealth());
-    }
+   
 }
