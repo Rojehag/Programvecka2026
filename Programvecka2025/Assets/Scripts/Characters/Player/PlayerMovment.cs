@@ -10,6 +10,8 @@ public class PlayerMovment : MonoBehaviour
     [SerializeField]int runspeed;
     int speed;
 
+    [SerializeField] GameObject dustParticles;
+
     [SerializeField] List<Sprite> playerSprites = new List<Sprite>();
 
     // Reference to the Rigidbody2D component
@@ -18,10 +20,13 @@ public class PlayerMovment : MonoBehaviour
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [System.Obsolete]
     void Start()
     {
         // Get the Rigidbody2D component attached to the player GameObject
         rigidbody = GetComponent<Rigidbody2D>();
+        GetComponent<Animator>().enabled = false;
+        dustParticles.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,22 +46,71 @@ public class PlayerMovment : MonoBehaviour
         {
             Move(transform.up);
             gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[0];
+            dustParticles.SetActive(true);
+            dustParticles.transform.rotation = Quaternion.Euler(0, 0, 90);
+            GetComponent<Animator>().enabled = true;
+            GetComponent<Animator>().SetBool("Up", true);
+
         }
         if(Input.GetKey(KeyCode.S))
         {
             Move(-transform.up);
             gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[1];
+            dustParticles.SetActive(true);
+            dustParticles.transform.rotation = Quaternion.Euler(0, 0, -90);
+            GetComponent<Animator>().enabled = true;
+            GetComponent<Animator>().SetBool("Down", true);
         }
         if (Input.GetKey(KeyCode.A))
         {
             Move(-transform.right);
             gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[2];
+            dustParticles.SetActive(true);
+            dustParticles.transform.rotation = Quaternion.Euler(0, 0, 180);
+            GetComponent<Animator>().enabled = true;
+            GetComponent<Animator>().SetBool("Left", true);
         }
         if (Input.GetKey(KeyCode.D))
         {
             Move(transform.right);
             gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[3];
+            dustParticles.SetActive(true);
+            dustParticles.transform.rotation = Quaternion.Euler(0, 0, 0);
+            GetComponent<Animator>().enabled = true;
+            GetComponent<Animator>().SetBool("Right", true);
         }
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            GetComponent<Animator>().SetBool("Up", false);
+            GetComponent<Animator>().enabled = false;
+            dustParticles.SetActive(false);
+            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[0];
+        }
+
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            GetComponent<Animator>().SetBool("Down", false);
+            dustParticles.SetActive(false);
+            GetComponent<Animator>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[1];
+        }
+
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            GetComponent<Animator>().SetBool("Left", false);
+            dustParticles.SetActive(false);
+            GetComponent<Animator>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[2];
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            GetComponent<Animator>().SetBool("Right", false);
+            dustParticles.SetActive(false);
+            GetComponent<Animator>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().sprite = playerSprites[3];
+        }
+
         // Adjust speed based on whether the Left Shift key is held down
         if (Input.GetKey(KeyCode.LeftShift))
         {
