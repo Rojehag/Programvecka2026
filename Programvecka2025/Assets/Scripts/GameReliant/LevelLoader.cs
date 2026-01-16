@@ -5,6 +5,7 @@ using System.Collections;
 public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
+    [SerializeField] FadeMusic fadeMusic;
     [SerializeField] float transitionTime = 1f;
     void Update()
     {
@@ -22,6 +23,7 @@ public class LevelLoader : MonoBehaviour
     public IEnumerator LoadLevel(int levelIndex)
     {
         transition.SetTrigger("Start");
+        fadeMusic.MusicFade();
 
         yield return new WaitForSeconds(transitionTime);
 
