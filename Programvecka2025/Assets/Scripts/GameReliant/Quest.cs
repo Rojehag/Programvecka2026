@@ -12,8 +12,8 @@ namespace Assets.Scripts.GameReliant
         string description;
         public int reward;
 
-        int progress;
-        int completeAmount;
+        public int progress;
+        public int completeAmount;
 
         public Quest(string title, string description, int reward, int completeAmount)
         {

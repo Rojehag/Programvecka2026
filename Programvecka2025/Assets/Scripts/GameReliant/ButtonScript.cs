@@ -4,11 +4,14 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonScript : MonoBehaviour
 {
     float time;
     bool delayYourTurn = false;
+
+    [SerializeField]LevelLoader levelLoader;
     private void Update()
     {
         time += Time.time;
@@ -40,5 +43,18 @@ public class ButtonScript : MonoBehaviour
         textMeshProUGUIs[0].SetText("Your Turn!");
         
 
+
+    }
+
+    public void PlayButton()
+    {
+        levelLoader.LoadNextLevel();
+        //SceneManager.LoadScene(1);
+
+    }
+
+    public void ExitButton()
+    {
+        Application.Quit();
     }
 }
