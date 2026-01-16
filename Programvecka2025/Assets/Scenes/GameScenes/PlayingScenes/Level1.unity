@@ -301,7 +301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5597922131918856173, guid: 0150bd1460aa58b49bd115c3fabe6643, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8351723306105412862, guid: 0150bd1460aa58b49bd115c3fabe6643, type: 3}
       propertyPath: fadeMusic
@@ -341,6 +341,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2199169274552157093, guid: 9ae0873f879e18d42ae87d4e9a8cb10f, type: 3}
+    - target: {fileID: 5984962199249276733, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4731,6 +4735,67 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &681352396
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3749257458422134408, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: Dante
+      value: 
+      objectReference: {fileID: 2057521787}
+    - target: {fileID: 5370300973039206203, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_Name
+      value: Virgil
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271198334652427045, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 340.87878
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271198334652427045, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 67.2897
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271198334652427045, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271198334652427045, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271198334652427045, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271198334652427045, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271198334652427045, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271198334652427045, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271198334652427045, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6271198334652427045, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 760de37b8174a0c4b976d0dc728fe9a1, type: 3}
 --- !u!1001 &792041701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4750,6 +4815,18 @@ PrefabInstance:
     - target: {fileID: 4467084268174764700, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
       propertyPath: healthBar
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079283373734244387, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2057521796}
+    - target: {fileID: 5079283373734244387, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+      propertyPath: dustParticles
+      value: 
+      objectReference: {fileID: 1932217379}
+    - target: {fileID: 7120011378631140424, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7713955792496779850, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
       propertyPath: experienceBar
@@ -4810,7 +4887,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1146777271308632114, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2057521796}
   m_SourcePrefab: {fileID: 100100000, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
 --- !u!1 &936945145
 GameObject:
@@ -6680,6 +6760,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f444b2799903cfc4891dc391b9fd0456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeMusic
+--- !u!1 &1932217379 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7076540315369891534, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+  m_PrefabInstance: {fileID: 792041701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2057521787 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1146777271308632114, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+  m_PrefabInstance: {fileID: 792041701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2057521796
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057521787}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e09760a57ff48fa4aa1110384054b1ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &8079005511185977433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6742,6 +6854,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 38247935}
+  - {fileID: 681352396}
   - {fileID: 792041701}
   - {fileID: 1428860443}
   - {fileID: 415593123}
