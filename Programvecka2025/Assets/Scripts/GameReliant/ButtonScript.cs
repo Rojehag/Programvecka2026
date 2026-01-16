@@ -57,4 +57,10 @@ public class ButtonScript : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void MainMenuButton()
+    {
+        levelLoader.LoadLevel(0);
+        //SceneManager.LoadScene(0);
+    }
 }
