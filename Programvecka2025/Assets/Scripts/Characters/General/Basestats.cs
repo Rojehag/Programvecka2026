@@ -33,9 +33,9 @@ public class Basestats: MonoBehaviour
     public bool CriticalHit()
     {
         // Generate a random number between 0 and 100
-        int critRoll = Random.Range(0, criticalChance);
+        int critRoll = Random.Range(0, 100);
         // Check if the roll is less than the critical chance
-        if (critRoll == 1)
+        if (critRoll > criticalChance)
         {
             return true; // Critical hit
         }
@@ -59,5 +59,23 @@ public class Basestats: MonoBehaviour
     public int GetMaxHealth()
     {
         return maxHealth;
+    }
+
+    public bool MissChance(int missChance)
+    {
+        int missRoll = Random.Range(0, 100);
+        if (missRoll > missChance)
+        {
+            return true; // Attack misses
+        }
+        else
+        {
+            return false; // Attack hits
+        }
+    }
+
+    public int GetDamage()
+    {
+        return damage;
     }
 }
