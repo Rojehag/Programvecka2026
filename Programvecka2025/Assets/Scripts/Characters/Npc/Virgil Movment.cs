@@ -18,6 +18,7 @@ public class VirgilMovment : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        GetComponent<Animator>().enabled = false;
     }
 
     // Update is called once per frame
@@ -39,22 +40,49 @@ public class VirgilMovment : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-            
-            gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[0];
+            GetComponent<Animator>().enabled = true;
+            GetComponent<Animator>().SetBool("Up", true);
         }
         if (Input.GetKey(KeyCode.S))
         {
-           
-            gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[1];
+            GetComponent<Animator>().enabled = true;
+            GetComponent<Animator>().SetBool("Down", true);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            
-            gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[2];
+            GetComponent<Animator>().enabled = true;
+            GetComponent<Animator>().SetBool("Left", true);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            
+            GetComponent<Animator>().enabled = true;
+            GetComponent<Animator>().SetBool("Right", true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            GetComponent<Animator>().SetBool("Up", false);
+            GetComponent<Animator>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[0];
+        }
+
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            GetComponent<Animator>().SetBool("Down", false);
+            GetComponent<Animator>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[1];
+        }
+
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            GetComponent<Animator>().SetBool("Left", false);
+            GetComponent<Animator>().enabled = false;
+            gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[2];
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            GetComponent<Animator>().SetBool("Right", false);
+            GetComponent<Animator>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().sprite = virgilSprites[3];
         }
     }
