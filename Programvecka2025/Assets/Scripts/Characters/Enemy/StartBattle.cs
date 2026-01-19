@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class StartBattle : MonoBehaviour
 {
     bool isPlayerInRange = false;
+    [SerializeField] LevelLoader levelLoader;
 
     // Update is called once per frame
     void Update()
@@ -28,8 +29,8 @@ public class StartBattle : MonoBehaviour
     {
         PlayerPrefs.SetFloat("playerx",transform.position.x);
         PlayerPrefs.SetFloat("playery",transform.position.y);
-        
+        levelLoader.LoadNextLevel();
         print("Let's start fighting!!!");
-        SceneManager.LoadScene(4);
+        
     }
 }

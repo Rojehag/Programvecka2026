@@ -17,10 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameScenes/PlayingScenes/Level1.unity
     guid: c722f374681fd8042be9f12c749dc0e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameScenes/PassivScenes/Win.unity
     guid: 20fd724016108b44bbd49339e000293f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameScenes/PassivScenes/GameOver.unity
     guid: cded3f4cb27e1ae419321a645648e071
   - enabled: 1

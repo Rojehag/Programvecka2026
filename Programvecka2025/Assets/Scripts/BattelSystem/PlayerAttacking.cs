@@ -38,25 +38,30 @@ public class PlayerAttacking : MonoBehaviour
 
     public void Attack1()
     {
+        print("Attack1");
         AttackEnemy(1.2f, 15);
         PlayerHasAttacked();
     }
     public void Attack2()
     {
+        print("Attack2");
         AttackEnemy(0.8f, 3);
         PlayerHasAttacked();
     }
 
     public void Attack3()
     {
+        print("Attack3");
         AttackEnemy(1.0f, 5);
         PlayerHasAttacked();
     }
 
     public void Attack4() 
     {
+        print("Attack4");
         AttackEnemy(1.5f, 30);
         PlayerHasAttacked();
+        
     }
 
 

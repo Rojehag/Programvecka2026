@@ -31,4 +31,6 @@ public class Menu : MonoBehaviour
         pauseButtonUI.SetActive(true);
         Time.timeScale = 1f;
     }
+
+    
 }
