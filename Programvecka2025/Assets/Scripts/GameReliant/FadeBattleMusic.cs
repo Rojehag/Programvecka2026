@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FadeBattleMusic : MonoBehaviour
+public class FadeBattleMusic : FadeMusic
 {
     [SerializeField] Animator fadeBattleMusicAnimator;
 

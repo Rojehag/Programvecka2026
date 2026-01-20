@@ -390,15 +390,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -434,7 +434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -78.57001
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 6fd8752f533bd974cb914a37a420d50f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5000,6 +5000,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2057521796}
   m_SourcePrefab: {fileID: 100100000, guid: c5c28e65022700f40bcb2cff47086425, type: 3}
+--- !u!1 &880478025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2919822645572528522, guid: 42e25b4d84ee9a442aecb5b36355a5f8, type: 3}
+  m_PrefabInstance: {fileID: 1534831296}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &936945145
 GameObject:
   m_ObjectHideFlags: 0
@@ -5079,6 +5084,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &947203412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6795391876824359673, guid: 42e25b4d84ee9a442aecb5b36355a5f8, type: 3}
+  m_PrefabInstance: {fileID: 1534831296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &947203414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947203412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c9498248becae47821f75ad86766f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menu
+  pauseMenuUI: {fileID: 880478025}
 --- !u!1 &1104408391
 GameObject:
   m_ObjectHideFlags: 0
@@ -6739,15 +6762,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 56fc006113cde0f4c9928da8b8913fae, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 56fc006113cde0f4c9928da8b8913fae, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 56fc006113cde0f4c9928da8b8913fae, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 56fc006113cde0f4c9928da8b8913fae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6783,7 +6806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 56fc006113cde0f4c9928da8b8913fae, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -78.57001
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 6075339626048333506, guid: 56fc006113cde0f4c9928da8b8913fae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6922,9 +6945,13 @@ PrefabInstance:
       value: PausMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1255802181460922073, guid: 42e25b4d84ee9a442aecb5b36355a5f8, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6795391876824359673, guid: 42e25b4d84ee9a442aecb5b36355a5f8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 947203414}
   m_SourcePrefab: {fileID: 100100000, guid: 42e25b4d84ee9a442aecb5b36355a5f8, type: 3}
 --- !u!114 &1851968596 stripped
 MonoBehaviour:

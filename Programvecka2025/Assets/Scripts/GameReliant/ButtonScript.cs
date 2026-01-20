@@ -59,7 +59,8 @@ public class ButtonScript : MonoBehaviour
 
     public void MainMenuButton()
     {
-        levelLoader.LoadLevel(0);
-        //SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
+        StartCoroutine(levelLoader.LoadLevel(0));
+        
     }
 }
