@@ -5,8 +5,8 @@ public class HealthBar : MonoBehaviour
 {
     public Image fillImage;
 
-    public void SetHealth(int Health) 
+    public void SetHealth(int Health, int MaxHealth) 
     { 
-        fillImage.fillAmount = Health / 100f;
+        fillImage.fillAmount = Health / MaxHealth;
     }
 }

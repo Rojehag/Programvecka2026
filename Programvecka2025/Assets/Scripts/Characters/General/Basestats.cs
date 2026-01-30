@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Basestats: MonoBehaviour
@@ -11,9 +13,16 @@ public class Basestats: MonoBehaviour
     [SerializeField] int criticalChance = 10;
     [SerializeField] int dodegeChance = 20;
     public int experiancePoints;
+    int currentLevel = 0;
+    List<int> nextLevel = new List<int>() { 100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5500 };
 
     // Level Buff Multiplier
     [SerializeField] float levelBuffMultipier;
+
+    public void Update()
+    {
+        gameObject.GetComponent<ExperienceBar>().SetExperience(experiancePoints, nextLevel[currentLevel]);
+    }
 
     public bool DodgeAttack()
     {

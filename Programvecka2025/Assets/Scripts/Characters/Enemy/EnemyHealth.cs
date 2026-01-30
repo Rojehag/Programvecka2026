@@ -3,10 +3,15 @@ using UnityEngine.SceneManagement;
 
 public class EnemyHealth : Health
 {
-    [SerializeField] GameObject player;
+    GameObject player;
 
     [SerializeField] LevelLoader levelLoader;
-    
+
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player");
+    }
+
     private void Update()
     {
         // Check if health is zero or below
@@ -22,7 +27,10 @@ public class EnemyHealth : Health
         Debug.Log("Enemy has died.");
         StartCoroutine(levelLoader.LoadLevel(SceneManager.GetActiveScene().buildIndex - 1));
         print(SceneManager.GetActiveScene().buildIndex - 1);
-        player.transform.position = new Vector2(PlayerPrefs.GetFloat("playerx", 0), PlayerPrefs.GetFloat("playery", 0));
-        
+
+        player.GetComponent<Basestats>().experiancePoints += 50; // Award experience points to the player
+
+
+
     }
 }

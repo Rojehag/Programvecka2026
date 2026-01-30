@@ -8,6 +8,7 @@ public class PlayerHealth : Health
     private void Start()
     {
         
+        transform.position = new Vector3(PlayerPrefs.GetFloat("playerx", 0), PlayerPrefs.GetFloat("playery", 0),-1);
     }
     private void Update()
     {
