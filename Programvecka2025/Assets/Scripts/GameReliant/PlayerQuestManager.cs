@@ -9,7 +9,6 @@ public class PlayerQuestManager : MonoBehaviour
 {
     List<Quest> quests = new List<Quest>();
     [SerializeField] Basestats basestats;
-    [SerializeField] ExperienceBar experienceBar;
     [SerializeField] TextMeshProUGUI questText;
 
     // Update is called once per frame
@@ -22,7 +21,7 @@ public class PlayerQuestManager : MonoBehaviour
             IncreaseQuestProgress("Soul Collecter", 1);
             ShowQuests();
         }
-        experienceBar.SetExperience(basestats.experiancePoints);
+        
         
     }
 

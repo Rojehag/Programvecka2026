@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
         // Change current health
         currentHealth += amount;
         print("Damage Dealt!");
-        healthBar.SetHealth(GetCurrentHealth());
+        healthBar.SetHealth(GetCurrentHealth(), gameObject.GetComponent<Basestats>().GetMaxHealth());
     }
    
 
